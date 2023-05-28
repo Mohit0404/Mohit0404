@@ -136,6 +136,16 @@ video {
    font-size: 4.5rem;
 }
 
+.yellow-button {
+   display: inline-block;
+   padding: 10px 20px;
+   background-color: #ffcc0d;
+   color: rgb(255, 254, 254);
+   text-decoration: none;
+   font-weight: bold;
+   border-radius: 5px;
+}
+
 .header .navbar{
    width: 100%;
 }
@@ -253,12 +263,15 @@ video {
 }
 
 .about .skills .progress{
+   display: flex;
+   flex-wrap: wrap;
    margin-top: 1rem;
 }
 
 .about .skills .progress .bar{
+   flex: 0 0 33.33%;
    margin:1rem auto;
-   max-width: 70rem;
+   max-width: 25rem;
    border:var(--border-bold);
    padding:1rem;
 }
@@ -270,6 +283,7 @@ video {
    font-size: 2rem;
    padding:1rem 2rem;
    background-color: var(--yellow);
+   justify-content: center;
 }
 
 .about .skills .progress .bar span{
@@ -277,19 +291,19 @@ video {
 }
 
 .about .skills .progress .bar:nth-child(1) h3{
-   width: 95%;
+   width: 100%;
 }
 
 .about .skills .progress .bar:nth-child(2) h3{
-   width: 80%;
+   width: 100%;
 }
 
 .about .skills .progress .bar:nth-child(3) h3{
-   width: 65%;
+   width: 100%;
 }
 
 .about .skills .progress .bar:nth-child(4) h3{
-   width: 80%;
+   width: 100%;
 }
 
 .about .edu-exp .row{
@@ -319,18 +333,27 @@ video {
    font-size: 1.5rem;
 }
 
+
+
 .about .edu-exp .row .box-container .box h3{
    font-size: 2.5rem;
    font-weight: normal;
+   color: #000;
    margin-top: 1.5rem;
    margin-bottom: 1rem;
 }
+
 
 .about .edu-exp .row .box-container .box p{
    line-height: 1.5;
    font-size: 1.7rem;
    line-height: 2;
 }
+
+.about .edu-exp .row .box-container .box a{
+   font-weight: bolder;
+}
+
 
 .services .box-container{
    display: grid;
